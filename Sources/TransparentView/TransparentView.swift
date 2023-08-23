@@ -9,6 +9,7 @@ class TransparentView: UIView {
         }
     }
     
+    
     // Expose border width property for design adjustments
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
