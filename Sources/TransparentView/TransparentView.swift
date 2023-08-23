@@ -1,7 +1,7 @@
 import UIKit
 
 @IBDesignable
-class TransparentView1: UIView {
+class TransparentView: UIView {
     // Expose corner radius property for design adjustments
     @IBInspectable var cornerRadius: CGFloat = 10 {
         didSet {
