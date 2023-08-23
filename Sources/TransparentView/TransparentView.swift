@@ -25,9 +25,9 @@ class TransparentView: UIView {
     }
     
     // Expose background color opacity property for design adjustments
-    @IBInspectable var backgroundColorOpacity: CGFloat = 0.1 {
+    @IBInspectable var viewOpacity: CGFloat = 0.1 {
         didSet {
-            backgroundColor = backgroundColor?.withAlphaComponent(backgroundColorOpacity)
+            backgroundColor = backgroundColor?.withAlphaComponent(viewOpacity)
         }
     }
     
@@ -43,7 +43,7 @@ class TransparentView: UIView {
     
     func setupView() {
         // Set a clear background color with opacity
-        backgroundColor = backgroundColor?.withAlphaComponent(backgroundColorOpacity)
+        backgroundColor = backgroundColor?.withAlphaComponent(viewOpacity)
         
         // Set the corner radius
         layer.cornerRadius = cornerRadius
